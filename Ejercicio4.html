@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="uo265009" />
+    <meta name="description" content="Pagina web para la asignatura de Software y Estándares para la Web"/>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="Ejercicio4.css">
+    <title>Ejercicio 4 - Precio plata</title>
+    
+</head>
+<body>
+
+
+<h1>Datos del precio de la plata </h1>
+	<section>
+		<h2>Datos actuales del precio sacados de <a href="https://www.goldapi.io">GoldAPI</a></h2>
+		<main>			
+             <form method='get'>                               
+                <fieldset>
+                    <legend> Tipo de moneda</legend> 
+                    <label for="EUR">EUR - Euro</label> 
+                        <input id="EUR" name="currency" value="EUR" type="radio" checked/><br>
+                    <label for="USD">USD - Dolar Estadounidense</label> 
+                        <input id="USD" name="currency" value="USD" type="radio" /><br>                      
+                </fieldset>      
+                <fieldset>
+                    <legend> Sistema de medida</legend> 
+                    <label for="kg">Metrico - kilogramo</label> 
+                        <input id="kg" name="measure" type="radio" checked/><br>
+                    <label for="oz">Sistema imperial - Onza</label> 
+                        <input id="oz" name="measure" type="radio" /><br>                         
+                </fieldset>          
+                
+                <input type="submit" value="Obtener datos" name="submit"><br>
+            </form>            
+		</main>        
+</body>
+
+</html>
