@@ -1,0 +1,44 @@
+
+/* Especificidad =  001 */
+form {    
+    display: grid;  
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;       
+
+
+   /* Que no se haga muy grande */
+    max-width: 600px;  
+    min-width: 280px;
+
+    /*Esto es para que parezca una calculadora */
+    padding: 20px;
+    background-color: #909497;
+    border-radius: 25px;
+  }
+  
+  /* Especificidad =  011 */
+input[type=button],[type=submit] {
+    background-color: #444;
+    color: #fff;
+    font-size: 120%;
+  }
+  /* Especificidad =  002 */
+form > textarea {
+    background-color: lightgreen;      
+    color: black;
+    font-size: 200%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: right;
+  }
+  /* Especificidad =  001 */
+  h1 {
+    text-align: left;
+    color: #7e122f;
+    text-transform: uppercase;      
+}
+/* Especificidad =  001 */
+body{
+  background-color: white;
+}

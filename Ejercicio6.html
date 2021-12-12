@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <meta name="author" content="uo265009">
+    <meta name="description" content="Pagina web para la asignatura de Software y Estándares para la Web">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="Ejercicio6.css">
+    <title>Ejercicio 6 - Gestión BD</title>
+    
+</head>
+<body>
+    <h1>Gestión de base de datos </h1>
+    <main>
+        <ul>
+            <li>Crear Base de Datos</li>
+            <li>Crear una tabla</li>
+            <li>Insertar datos en una tabla</li>
+            <li>Buscar datos en una tabla</li>
+            <li>Modificar datos en una tabla</li>
+            <li>Eliminar datos de una tabla</li>
+            <li>Generar informe</li>
+            <li>Cargar datos desde un archivo CSV en una tabla de la Base de Datos</li>
+            <li>Exportar datos a un archivo en formato CSV los datos desde una tabla de la Base de Datos</li>
+        </ul>
+    </main>
+    <!-- Aqui vamos a estampar el formulario -->
+    <form method="post">
+        <fieldset>
+            <legend>Datos personales usuario</legend>
+            <label for="dni">DNI</label>
+                <input id="dni" name="dni"><br>
+            <label for="name">Name</label>
+                <input id="name"><br>
+            <label for="surname">Apellidos</label>
+                <input id="surname" name="surname"><br>
+            <label for="email">Correo electrónico</label>
+                <input id="email" type="email" name="email"><br>
+            <label for="tlf">Teléfono</label>
+                <input id="tlf" type="tel" name="tel" pattern="[0-9]{9}"><br>
+            <label for="age">Edad</label>
+                <input id="age" name="age" type="number"><br>
+            <fieldset>
+                <legend>Sexo</legend>
+                <input id="masculino" type="radio" name="sexo" value="Masculino">
+                    <label for="masculino">Masculino</label><br>
+                <input id="femenino" type="radio" name="sexo" value="Femenino">
+                    <label for="femenino">Femenino</label><br>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Datos prueba usabilidad</legend>
+            <label for="pericia">Pericia informática</label>
+                <input id="pericia" type="range" name="points" min="0" max="10"> <br>
+            <label for="time">Tiempo (segundos)</label>
+                <input id="time" name="time" type="number"><br>
+        
+            <fieldset>
+                <legend>Tarea realizada correctamente</legend>
+                <input id="yes" type="radio" name="done" value="yes">
+                    <label for="yes">Si</label><br>
+                <input id="no" type="radio" name="done" value="No">
+                    <label for="no">No</label><br>
+            </fieldset>
+            <label for="comment">Problemas encontrados </label>
+                <textarea id="comment" name="comment"></textarea><br>
+            <label for="comment">Propuestas de mejora</label>
+                <textarea id="comment" name="comment"></textarea><br>
+            <label for="userV">Valoracion usuario</label>
+                <input id="userV" type="range" name="userV" min="0" max="10"> 
+        </fieldset>
+    </form>
+    <!-- Fin del formulario -->
+    
+
+</body></html>
