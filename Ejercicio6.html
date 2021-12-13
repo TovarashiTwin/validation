@@ -13,65 +13,78 @@
     <h1>Gestión de base de datos </h1>
     <main>
         <ul>
-            <li>Crear Base de Datos</li>
-            <li>Crear una tabla</li>
-            <li>Insertar datos en una tabla</li>
-            <li>Buscar datos en una tabla</li>
-            <li>Modificar datos en una tabla</li>
-            <li>Eliminar datos de una tabla</li>
-            <li>Generar informe</li>
-            <li>Cargar datos desde un archivo CSV en una tabla de la Base de Datos</li>
-            <li>Exportar datos a un archivo en formato CSV los datos desde una tabla de la Base de Datos</li>
+            <li><a href="#crearBD">Crear Base de Datos</a></li>
+            <li><a href="#crearTabla">Crear una tabla</a></li>
+            <li><a href="#insertarDatos">Insertar datos en una tabla</a></li>
+            <li><a href="#insertarDatos">Buscar datos en una tabla</a></li>
+            <li><a href="#insertarDatos">Modificar datos en una tabla</a></li>
+            <li><a href="#insertarDatos">Eliminar datos de una tabla</a></li>
+            <li><a href="#insertarDatos">Generar informe</a></li>
+            <li><a href="#insertarDatos">Cargar datos desde csv</a></li><!-- Cargar datos desde un archivo CSV en una tabla de la Base de Datos -->
+            <li><a href="#insertarDatos">Exportar datos a csv</a></li><!-- Exportar datos a un archivo en formato CSV los datos desde una tabla de la Base de Datos -->            
         </ul>
-    </main>
-    <!-- Aqui vamos a estampar el formulario -->
-    <form method="post">
-        <fieldset>
-            <legend>Datos personales usuario</legend>
-            <label for="dni">DNI</label>
-                <input id="dni" name="dni"><br>
-            <label for="name">Name</label>
-                <input id="name"><br>
-            <label for="surname">Apellidos</label>
-                <input id="surname" name="surname"><br>
-            <label for="email">Correo electrónico</label>
-                <input id="email" type="email" name="email"><br>
-            <label for="tlf">Teléfono</label>
-                <input id="tlf" type="tel" name="tel" pattern="[0-9]{9}"><br>
-            <label for="age">Edad</label>
-                <input id="age" name="age" type="number"><br>
-            <fieldset>
-                <legend>Sexo</legend>
-                <input id="masculino" type="radio" name="sexo" value="Masculino">
-                    <label for="masculino">Masculino</label><br>
-                <input id="femenino" type="radio" name="sexo" value="Femenino">
-                    <label for="femenino">Femenino</label><br>
-            </fieldset>
-        </fieldset>
-        <fieldset>
-            <legend>Datos prueba usabilidad</legend>
-            <label for="pericia">Pericia informática</label>
-                <input id="pericia" type="range" name="points" min="0" max="10"> <br>
-            <label for="time">Tiempo (segundos)</label>
-                <input id="time" name="time" type="number"><br>
+
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor, ante sodales rhoncus accumsan, est odio maximus ante, eget pellentesque nunc mi ullamcorper nibh. Praesent consequat consectetur rutrum. Mauris pretium quis lectus ut cursus. Praesent cursus sapien eget accumsan sollicitudin. Sed eget justo sed turpis mollis vestibulum. Praesent efficitur vitae arcu et facilisis. Nullam laoreet enim lectus, ut tincidunt felis varius sit amet. Cras elementum nulla rutrum porttitor ultricies. Quisque ac enim tellus. Etiam dictum, ante a cursus congue, eros justo maximus felis, vel commodo elit tellus id sapien. Morbi ut fringilla augue. Aenean vestibulum fermentum commodo. Proin pulvinar libero vitae urna luctus, eget tristique leo ultricies. Praesent sed orci et erat commodo pretium eu imperdiet quam. In sagittis est ex, vel rhoncus metus dignissim at. Vivamus ut volutpat mi.</p>
+        <p>Etiam ut tortor consequat, pretium lorem a, volutpat sem. Donec enim purus, scelerisque eget justo sit amet, convallis pulvinar mi. Sed eget blandit erat. Mauris fringilla vulputate mi, in ullamcorper tortor semper vel. Aliquam rhoncus suscipit felis eu posuere. Aliquam aliquam ante quis risus placerat convallis. Mauris viverra elementum fermentum. Nunc rutrum odio eget nulla finibus commodo. In hac habitasse platea dictumst. Etiam ultricies, nulla ac dignissim malesuada, nisl diam lacinia odio, ac maximus velit elit at diam. Aenean tristique, quam eget efficitur accumsan, nunc diam rutrum nibh, facilisis gravida elit nibh vel nunc. Aenean id nisl id lorem pretium consequat. Nulla euismod volutpat ex vitae varius. In posuere elit quis velit accumsan, eu efficitur arcu tincidunt. Donec gravida enim odio, at euismod lorem mattis vel. Aenean ut est in sem consectetur consequat.</p> -->
+        <!-- Crear base de datos -->
+        <h2 id="crearBD">Crear base de datos </h2>
+        <form method="post">
+		    <input type="submit" name="crearBD" value="Crear base de datos">
+        <!-- Crear tabla -->
+        <h2 id="crearTabla">Crear una tabla</h2>
         
+		    <input type="submit" name="crearBD" value="Crear base de datos">
+	    </form>
+        <!-- Insertar datos en una tabla -->
+        <h2 id="insertarDatos">Insertar datos en una tabla</h2>
+        <form method="post">
             <fieldset>
-                <legend>Tarea realizada correctamente</legend>
-                <input id="yes" type="radio" name="done" value="yes">
-                    <label for="yes">Si</label><br>
-                <input id="no" type="radio" name="done" value="No">
-                    <label for="no">No</label><br>
+                <legend>Datos personales usuario</legend>
+                <label for="dni">DNI</label>
+                    <input id="dni" name="dni"><br>
+                <label for="name">Name</label>
+                    <input id="name"><br>
+                <label for="surname">Apellidos</label>
+                    <input id="surname" name="surname"><br>
+                <label for="email">Correo electrónico</label>
+                    <input id="email" type="email" name="email"><br>
+                <label for="tlf">Teléfono</label>
+                    <input id="tlf" type="tel" name="tel" pattern="[0-9]{9}"><br>
+                <label for="age">Edad</label>
+                    <input id="age" name="age" type="number"><br>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input id="masculino" type="radio" name="sexo" value="Masculino">
+                        <label for="masculino">Masculino</label><br>
+                    <input id="femenino" type="radio" name="sexo" value="Femenino">
+                        <label for="femenino">Femenino</label><br>
+                </fieldset>
             </fieldset>
-            <label for="comment">Problemas encontrados </label>
-                <textarea id="comment" name="comment"></textarea><br>
-            <label for="upgrades">Propuestas de mejora</label>
-                <textarea id="upgrades" name="upgrades"></textarea><br>
-            <label for="userV">Valoracion usuario</label>
-                <input id="userV" type="range" name="userV" min="0" max="10"> 
-        </fieldset>
-		<button type="submit" name="submit">Insertar</button>
-    </form>
-    <!-- Fin del formulario -->
-    
+            <fieldset>
+                <legend>Datos prueba usabilidad</legend>
+                <label for="pericia">Pericia informática</label>
+                    <input id="pericia" type="range" name="points" min="0" max="10"> <br>
+                <label for="time">Tiempo (segundos)</label>
+                    <input id="time" name="time" type="number"><br>
+            
+                <fieldset>
+                    <legend>Tarea realizada correctamente</legend>
+                    <input id="yes" type="radio" name="done" value="yes">
+                        <label for="yes">Si</label><br>
+                    <input id="no" type="radio" name="done" value="No">
+                        <label for="no">No</label><br>
+                </fieldset>
+                <label for="comment">Problemas encontrados </label>
+                    <textarea id="comment" name="comment"></textarea><br>
+                <label for="upgrades">Propuestas de mejora</label>
+                    <textarea id="upgrades" name="upgrades"></textarea><br>
+                <label for="userV">Valoracion usuario</label>
+                    <input id="userV" type="range" name="userV" min="0" max="10"> 
+            </fieldset>
+            <button type="submit" name="submit">Insertar</button>
+        </form>
+        <!-- Fin del formulario -->
+            </main>
+
 
 </body></html>
