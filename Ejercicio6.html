@@ -16,28 +16,31 @@
             <li><a href="#crearBD">Crear Base de Datos</a></li>
             <li><a href="#crearTabla">Crear una tabla</a></li>
             <li><a href="#insertarDatos">Insertar datos en una tabla</a></li>
-            <li><a href="#insertarDatos">Buscar datos en una tabla</a></li>
-            <li><a href="#insertarDatos">Modificar datos en una tabla</a></li>
-            <li><a href="#insertarDatos">Eliminar datos de una tabla</a></li>
-            <li><a href="#insertarDatos">Generar informe</a></li>
-            <li><a href="#insertarDatos">Cargar datos desde csv</a></li><!-- Cargar datos desde un archivo CSV en una tabla de la Base de Datos -->
-            <li><a href="#insertarDatos">Exportar datos a csv</a></li><!-- Exportar datos a un archivo en formato CSV los datos desde una tabla de la Base de Datos -->            
+            <li><a href="#buscarDatos">Buscar datos en una tabla</a></li>
+            <li><a href="#modificarDatos">Modificar datos en una tabla</a></li>
+            <li><a href="#eliminarDatos">Eliminar datos de una tabla</a></li>
+            <li><a href="#generarInforme">Generar informe</a></li>
+            <li><a href="#cargarCSV">Cargar datos desde csv</a></li><!-- Cargar datos desde un archivo CSV en una tabla de la Base de Datos -->
+            <li><a href="#exportarCSV">Exportar datos a csv</a></li><!-- Exportar datos a un archivo en formato CSV los datos desde una tabla de la Base de Datos -->            
         </ul>
 
         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor, ante sodales rhoncus accumsan, est odio maximus ante, eget pellentesque nunc mi ullamcorper nibh. Praesent consequat consectetur rutrum. Mauris pretium quis lectus ut cursus. Praesent cursus sapien eget accumsan sollicitudin. Sed eget justo sed turpis mollis vestibulum. Praesent efficitur vitae arcu et facilisis. Nullam laoreet enim lectus, ut tincidunt felis varius sit amet. Cras elementum nulla rutrum porttitor ultricies. Quisque ac enim tellus. Etiam dictum, ante a cursus congue, eros justo maximus felis, vel commodo elit tellus id sapien. Morbi ut fringilla augue. Aenean vestibulum fermentum commodo. Proin pulvinar libero vitae urna luctus, eget tristique leo ultricies. Praesent sed orci et erat commodo pretium eu imperdiet quam. In sagittis est ex, vel rhoncus metus dignissim at. Vivamus ut volutpat mi.</p>
         <p>Etiam ut tortor consequat, pretium lorem a, volutpat sem. Donec enim purus, scelerisque eget justo sit amet, convallis pulvinar mi. Sed eget blandit erat. Mauris fringilla vulputate mi, in ullamcorper tortor semper vel. Aliquam rhoncus suscipit felis eu posuere. Aliquam aliquam ante quis risus placerat convallis. Mauris viverra elementum fermentum. Nunc rutrum odio eget nulla finibus commodo. In hac habitasse platea dictumst. Etiam ultricies, nulla ac dignissim malesuada, nisl diam lacinia odio, ac maximus velit elit at diam. Aenean tristique, quam eget efficitur accumsan, nunc diam rutrum nibh, facilisis gravida elit nibh vel nunc. Aenean id nisl id lorem pretium consequat. Nulla euismod volutpat ex vitae varius. In posuere elit quis velit accumsan, eu efficitur arcu tincidunt. Donec gravida enim odio, at euismod lorem mattis vel. Aenean ut est in sem consectetur consequat.</p> -->
         <!-- Crear base de datos -->
         <h2 id="crearBD">Crear base de datos </h2>
+        <p>Crea una base de datos para las pruebas de usabilidad</p>
         <form method="post">
 		    <input type="submit" name="crearBD" value="Crear base de datos">
         <!-- Crear tabla -->
         <h2 id="crearTabla">Crear una tabla</h2>
+        <p>Crea una tabla para las pruebas de usabilidad</p>
         
 		    <input type="submit" name="crearBD" value="Crear base de datos">
 	    </form>
         <!-- Insertar datos en una tabla -->
         <h2 id="insertarDatos">Insertar datos en una tabla</h2>
-        <form method="post">
+        <p>Los datos "Sexo" y "Tarea realizada correctamente" tienen valores por defecto</p>
+        <form action="#insertarDatos" method="post">
             <fieldset>
                 <legend>Datos personales usuario</legend>
                 <label for="dni">DNI</label>
@@ -83,7 +86,24 @@
             </fieldset>
             <button type="submit" name="submit">Insertar</button>
         </form>
-        <!-- Fin del formulario -->
+        <!-- Buscar datos en una tabla -->
+        <h2 id="buscarDatos"> Buscar datos en una tabla </h2>
+        <p>Busca datos en base a PLACEHOLDER</p>
+        <!-- Modificar datos en una tabla -->
+        <h2 id="modificarDatos">Modificar datos en una tabla</h2>
+        <p>Modifica PLACEHOLDER</p>
+        <!-- Eliminar datos de una tabla -->
+        <h2 id="eliminarDatos">Eliminar datos de una tabla</h2>
+        <p>Eliminar datos en base a PLACEHOLDER </p>
+        <!-- Generar informe< -->
+        <h2 id="generarInforme">Generar informe</h2>
+        <p>PLACEHOLDER</p>
+        <!-- Cargar datos desde csv -->
+        <h2 id="cargarCSV">Cargar datos desde csv</h2>
+        <p>Permite poblar la base de datos desde un csv cargado desde archivos locales</p>
+        <!-- Exportar datos a csv -->
+        <h2 id="exportarCSV">Exportar datos a csv</h2>
+        <p>Permite exportar los datos de la BBDD a un archivo csv</p>
             </main>
 
 
