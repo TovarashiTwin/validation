@@ -32,12 +32,14 @@
         <form action="#crearBD" method="post">
 		    <input type="submit" name="crearBD" value="Crear base de datos">
         </form>
+		<p> Base de datos creada correctamente</p>
                 <!-- Crear tabla -->
         <h2 id="crearTabla">Crear una tabla</h2>
         <p>Crea una tabla para las pruebas de usabilidad</p>
         <form action="#crearTabla" method="post">
 		    <input type="submit" name="crearTabla" value="Crear tabla">            
 	    </form>
+		<p>Error al crear la tabla</p>
                 <!-- Insertar datos en una tabla -->
         <h2 id="insertarDatos">Insertar datos en una tabla</h2>
         <p>Los datos "Sexo" y "Tarea realizada correctamente" tienen valores por defecto</p>
@@ -111,6 +113,7 @@
             </fieldset>
             <button type="submit" name="insertarDatos">Insertar</button>
         </form>
+		<p>Inserción completada</p>
                 <!-- Buscar datos en una tabla -->
         <h2 id="buscarDatos"> Buscar datos en una tabla </h2>
         <p>Busca datos en base a DNI</p>
@@ -119,6 +122,21 @@
                     <input id="dniBuscar" name="dni" required=""><br>
 		    <input type="submit" name="buscarDatos" value="buscar">
         </form>
+		<ul>
+                                        <li>Dni: 71738426T</li>
+                                        <li>Nombre: Manuel</li>
+                                        <li>Apellidos: Lorenzo Vega</li>                           
+                                        <li>Email: prueba1@prueba.com</li>           
+                                        <li>Teléfono: 612111111</li>    
+                                        <li>Edad: 22</li>
+                                        <li>Pericia: 8</li>   
+                                        <li>Tiempo: 10</li>   
+                                        <li>Completada: yes</li>   
+                                        <li>Comentario: Muy usable</li>     
+                                        <li>Propuesta: un poco a la izquierda</li>            
+                                        <li>Valoración: 8</li>  
+                                        <li>Sexo: M</li>     
+                                    </ul>
                 <!-- Modificar datos en una tabla -->
         <h2 id="modificarDatos">Modificar datos</h2>
         <p>Modifica datos, se cambiaran los datos correspondientes al del dni introducido</p>
@@ -193,6 +211,7 @@
             </fieldset>
             <button type="submit" name="modificarDatos">Modificar</button>
         </form>
+		<p>Error fatal</p>
                 <!-- Eliminar datos de una tabla -->
         <h2 id="eliminarDatos">Eliminar datos de una tabla</h2>
         <p>Eliminar datos en base al DNI</p>
@@ -201,12 +220,22 @@
                     <input id="dniEliminar" name="dni" required=""><br>
 		    <input type="submit" name="eliminarDatos" value="buscar">
         </form>
+		<p>Eliminar datos</p>
                 <!-- Generar informe< -->
         <h2 id="generarInforme">Generar informe</h2>
         <p>Estadisticas sobre los resultados de las pruebas</p>
         <form action="#generarInforme" method="post">
 		    <input type="submit" name="generarInforme" value="Mostrar">
         </form>
+		<ul>
+                            <li>Edad media: 42.0000</li>
+                            <li>Porcentaje hombres: 42.86%</li>
+                            <li>Porcentaje mujeres: 57.14%</li>
+                            <li>Media de pericia informatica: 4.2857</li>
+                            <li>Tiempo medio de las tareas (segundos): 43.7143</li>
+                            <li>Porcentaje de usuarios que realizaron la tarea correctamente: 71.43%</li>
+                            <li>Media de valoracion de los usuarios: 3.4286</li>
+                        </ul>
                 <!-- Cargar datos desde csv -->
         <h2 id="cargarCSV">Cargar datos desde csv</h2>
         <p>Permite poblar la base de datos desde un csv cargado desde archivos locales</p>
@@ -215,13 +244,14 @@
 		    <input id="csvfile" type="file" name="CSV">
 		<input type="submit" name="cargarCSV" value="Cargar">
         	    </form>
+				<p>Archivo cargado correctamente</p>
         <!-- Exportar datos a csv -->
         <h2 id="exportarCSV">Exportar datos a csv</h2>
         <p>Permite exportar los datos de la BBDD a un archivo csv</p>      
         <form action="#exportarCSV" method="post">
 		    <input type="submit" name="exportarCSV" value="Exportar">
         </form>
-          
+          <p>CSV exportado correctamente</p>
     </main>
 
 
