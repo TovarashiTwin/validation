@@ -115,8 +115,8 @@
         <h2 id="buscarDatos"> Buscar datos en una tabla </h2>
         <p>Busca datos en base a DNI</p>
         <form action="#buscarDatos" method="post">
-            <label for="dni">DNI</label>
-                    <input id="dni" name="dni" required=""><br>
+            <label for="dniBuscar">DNI</label>
+                    <input id="dniBuscar" name="dni" required=""><br>
 		    <input type="submit" name="buscarDatos" value="buscar">
         </form>
                 <!-- Modificar datos en una tabla -->
@@ -126,30 +126,30 @@
         <form action="#modificarDatos" method="post">
             <fieldset>
                 <legend>Datos personales usuario</legend>
-                <label for="dni">DNI del </label>
-                    <input id="dni" name="dni" required=""><br>
-                <label for="name">Name</label>
-                    <input id="name" name="name"><br>
-                <label for="surname">Apellidos</label>
-                    <input id="surname" name="surname"><br>
-                <label for="email">Correo electrónico</label>
-                    <input id="email" type="email" name="email"><br>
-                <label for="tlf">Teléfono</label>
-                    <input id="tlf" type="tel" name="tlf" pattern="[0-9]{9}"><br>
-                <label for="age">Edad</label>
-                    <input id="age" name="age" type="number"><br>
+                <label for="dnim">DNI del </label>
+                    <input id="dnim" name="dni" required=""><br>
+                <label for="namem">Name</label>
+                    <input id="namem" name="name"><br>
+                <label for="surnamem">Apellidos</label>
+                    <input id="surnamem" name="surname"><br>
+                <label for="emailm">Correo electrónico</label>
+                    <input id="emailm" type="email" name="email"><br>
+                <label for="tlfm">Teléfono</label>
+                    <input id="tlfm" type="tel" name="tlf" pattern="[0-9]{9}"><br>
+                <label for="agem">Edad</label>
+                    <input id="agem" name="age" type="number"><br>
                 <fieldset>
                     <legend>Sexo</legend>
-                    <input id="masculino" type="radio" name="sexo" value="M">
-                        <label for="masculino">Masculino</label><br>
-                    <input id="femenino" type="radio" name="sexo" value="F">
-                        <label for="femenino">Femenino</label><br>
+                    <input id="masculinom" type="radio" name="sexo" value="M">
+                        <label for="masculinom">Masculino</label><br>
+                    <input id="femeninom" type="radio" name="sexo" value="F">
+                        <label for="femeninom">Femenino</label><br>
                 </fieldset>
             </fieldset>
             <fieldset>
                 <legend>Datos prueba usabilidad</legend>
-                <label for="pericia">Pericia informática</label>
-                    <select id="pericia" name="pericia">
+                <label for="periciam">Pericia informática</label>
+                    <select id="periciam" name="pericia">
                         <option value="10">10</option>
                         <option value="9">9</option>
                         <option value="8">8</option>
@@ -162,22 +162,22 @@
                         <option value="1">1</option>
                         <option value="0">0</option>
                     </select>
-                <label for="time">Tiempo (segundos)</label>
-                    <input id="time" name="time" type="number"><br>
+                <label for="timem">Tiempo (segundos)</label>
+                    <input id="timem" name="time" type="number"><br>
             
                 <fieldset>
                     <legend>Tarea realizada correctamente</legend>
-                    <input id="yes" type="radio" name="done" value="yes">
-                        <label for="yes">Si</label><br>
-                    <input id="no" type="radio" name="done" value="no">
-                        <label for="no">No</label><br>
+                    <input id="yesm" type="radio" name="done" value="yes">
+                        <label for="yesm">Si</label><br>
+                    <input id="nom" type="radio" name="done" value="no">
+                        <label for="nom">No</label><br>
                 </fieldset>
-                <label for="comment">Problemas encontrados </label>
-                    <textarea id="comment" name="comment"></textarea><br>
-                <label for="upgrades">Propuestas de mejora</label>
-                    <textarea id="upgrades" name="upgrades"></textarea><br>
-                <label for="userV">Valoracion usuario</label>
-                    <select id="userV" name="userV">
+                <label for="commentm">Problemas encontrados </label>
+                    <textarea id="commentm" name="comment"></textarea><br>
+                <label for="upgradesm">Propuestas de mejora</label>
+                    <textarea id="upgradesm" name="upgrades"></textarea><br>
+                <label for="userVm">Valoracion usuario</label>
+                    <select id="userVm" name="userV">
                         <option value="10">10</option>
                         <option value="9">9</option>
                         <option value="8">8</option>
@@ -197,8 +197,8 @@
         <h2 id="eliminarDatos">Eliminar datos de una tabla</h2>
         <p>Eliminar datos en base al DNI</p>
         <form action="#eliminarDatos" method="post">
-            <label for="dni">DNI</label>
-                    <input id="dni" name="dni" required=""><br>
+            <label for="dniEliminar">DNI</label>
+                    <input id="dniEliminar" name="dni" required=""><br>
 		    <input type="submit" name="eliminarDatos" value="buscar">
         </form>
                 <!-- Generar informe< -->
