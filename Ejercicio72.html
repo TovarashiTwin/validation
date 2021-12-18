@@ -12,56 +12,60 @@
 <body>
     <h1>Gestión espacio para lectores</h1>
     <main>
+            <p>Los campos en blanco no aplicaran el filtro</p>
+    <form method="post">           
+            <label for="fAutor">Autor</label>
+                <input id="fAutor" name="fAutor" placeholder="Laura"><br>
+            <label for="fEditorial">Apellidos</label>
+                <input id="fEditorial" name="fEditorial" placeholder="Apiario"><br>
+		    <input type="submit" name="filtroLibros" value="Buscar">
+    </form>
+        <form method="post">
+        
+                        <label for="flibroShow">Filtro libros</label>
+                            <select id="flibroShow" name="flibroShow">
+                                <option value="2">Memorias de Idhún</option> 
+                            
+                                <option value="3">Alas de fuego</option> 
+                            
+                                <option value="5">La Rueda del Tiempo</option> 
+                            
+                                <option value="6">Elephants Can Remember</option> 
+                            
+                                <option value="7">Five Little Pigs</option> 
+                            
+                                <option value="8"> Murder in Mesopotamia</option> 
+                            </select>
+                               <input type="submit" name="filtroComentarios" value="Mostrar comentarios">
+    </form>
         
     <form method="post">
-            <!-- <label for= "dniBuscar">DNI</label>
-                    <input id = "dniBuscar" name = "dni" required><br> -->
-		    <input type="submit" name="filtroLibros" value="Buscar">            
-        </form>
-        <table>
-                                        <tbody><tr>
-                                            <th>Nombre</th>
-                                            <th>Autor</th>
-                                            <th>Editorial</th>                                            
-                                        </tr>
-                                    
-                                        <tr>
-                                            <td>Memorias de Idhún</td>
-                                            <td>Laura Gallego</td>
-                                            <td>Apiario Editora</td><td>
-                                        </td></tr>
-                                    
-                                        <tr>
-                                            <td>Alas de fuego</td>
-                                            <td>Laura Gallego</td>
-                                            <td>Andavira Editora</td><td>
-                                        </td></tr>
-                                    
-                                        <tr>
-                                            <td>La Rueda del Tiempo</td>
-                                            <td>Robert Jordan</td>
-                                            <td>Algani Editorial</td><td>
-                                        </td></tr>
-                                    
-                                        <tr>
-                                            <td>Elephants Can Remember</td>
-                                            <td>Agatha Christie</td>
-                                            <td>Andavira Editora</td><td>
-                                        </td></tr>
-                                    
-                                        <tr>
-                                            <td>Five Little Pigs</td>
-                                            <td>Agatha Christie</td>
-                                            <td>Algani Editorial</td><td>
-                                        </td></tr>
-                                    
-                                        <tr>
-                                            <td> Murder in Mesopotamia</td>
-                                            <td>Agatha Christie</td>
-                                            <td>Apiario Editora</td><td>
-                                        </td></tr>
-                                    </tbody></table>
-    </main>
+        <fieldset>
+                <legend>Introduzca un comentario</legend>
+                <label for="alias">Alias</label>
+                    <input id="alias" name="alias" required=""><br>
+                    
+                        <label for="flibroAdd">Filtro libros</label>
+                            <select id="flibroAdd" name="flibroAdd">
+                                <option value="2">Memorias de Idhún</option> 
+                            
+                                <option value="3">Alas de fuego</option> 
+                            
+                                <option value="5">La Rueda del Tiempo</option> 
+                            
+                                <option value="6">Elephants Can Remember</option> 
+                            
+                                <option value="7">Five Little Pigs</option> 
+                            
+                                <option value="8"> Murder in Mesopotamia</option> 
+                            </select>
+                                        <br><label for="comentario">Comentario sobre la obra </label>
+                    <textarea id="comentario" name="comentario" required=""></textarea><br>
+                <input type="submit" name="addComentario" value="Enviar">
+        </fieldset>
+    </form>
+    <p>¡Comentario añadido correctamente!</p>    </main>
+    
 
 
 </body></html>
