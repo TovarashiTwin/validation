@@ -1,0 +1,20 @@
+h1 {
+    text-align: left;
+    color: #7e122f;
+    text-transform: uppercase;      
+}
+/* Especificidad =  001 */
+body{
+  background-color: white;
+  color: #000000;
+}
+table,th, td{
+	border-collapse: collapse;
+	border: 0.1em solid black;
+	text-align: center;	
+}
+/* Especificidad =  001 */
+th{
+	background-color: #6a142b;
+	color: white;
+}
