@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <meta name="author" content="uo265009">
+    <meta name="description" content="Pagina web para la asignatura de Software y Estándares para la Web">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="Ejercicio6.css">
+    <title>Ejercicio 6 - Gestión BD</title>
+    
+</head>
+<body>
+    <h1>Gestión de base de datos </h1>
+    <main>
+                <ul>
+            <li><a href="#crearBD">Crear Base de Datos</a></li>
+            <li><a href="#crearTabla">Crear una tabla</a></li>
+            <li><a href="#insertarDatos">Insertar datos en una tabla</a></li>
+            <li><a href="#buscarDatos">Buscar datos en una tabla</a></li>
+            <li><a href="#modificarDatos">Modificar datos en una tabla</a></li>
+            <li><a href="#eliminarDatos">Eliminar datos de una tabla</a></li>
+            <li><a href="#generarInforme">Generar informe</a></li>
+            <li><a href="#cargarCSV">Cargar datos desde csv</a></li><!-- Cargar datos desde un archivo CSV en una tabla de la Base de Datos -->
+            <li><a href="#exportarCSV">Exportar datos a csv</a></li><!-- Exportar datos a un archivo en formato CSV los datos desde una tabla de la Base de Datos -->            
+        </ul>
+
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor, ante sodales rhoncus accumsan, est odio maximus ante, eget pellentesque nunc mi ullamcorper nibh. Praesent consequat consectetur rutrum. Mauris pretium quis lectus ut cursus. Praesent cursus sapien eget accumsan sollicitudin. Sed eget justo sed turpis mollis vestibulum. Praesent efficitur vitae arcu et facilisis. Nullam laoreet enim lectus, ut tincidunt felis varius sit amet. Cras elementum nulla rutrum porttitor ultricies. Quisque ac enim tellus. Etiam dictum, ante a cursus congue, eros justo maximus felis, vel commodo elit tellus id sapien. Morbi ut fringilla augue. Aenean vestibulum fermentum commodo. Proin pulvinar libero vitae urna luctus, eget tristique leo ultricies. Praesent sed orci et erat commodo pretium eu imperdiet quam. In sagittis est ex, vel rhoncus metus dignissim at. Vivamus ut volutpat mi.</p>
+        <p>Etiam ut tortor consequat, pretium lorem a, volutpat sem. Donec enim purus, scelerisque eget justo sit amet, convallis pulvinar mi. Sed eget blandit erat. Mauris fringilla vulputate mi, in ullamcorper tortor semper vel. Aliquam rhoncus suscipit felis eu posuere. Aliquam aliquam ante quis risus placerat convallis. Mauris viverra elementum fermentum. Nunc rutrum odio eget nulla finibus commodo. In hac habitasse platea dictumst. Etiam ultricies, nulla ac dignissim malesuada, nisl diam lacinia odio, ac maximus velit elit at diam. Aenean tristique, quam eget efficitur accumsan, nunc diam rutrum nibh, facilisis gravida elit nibh vel nunc. Aenean id nisl id lorem pretium consequat. Nulla euismod volutpat ex vitae varius. In posuere elit quis velit accumsan, eu efficitur arcu tincidunt. Donec gravida enim odio, at euismod lorem mattis vel. Aenean ut est in sem consectetur consequat.</p> -->
+        <!-- Crear base de datos -->
+        <h2 id="crearBD">Crear base de datos </h2>
+        <p>Crea una base de datos para las pruebas de usabilidad</p>       
+        <form action="#crearBD" method="post">
+		    <input type="submit" name="crearBD" value="Crear base de datos">
+        </form>
+                <!-- Crear tabla -->
+        <h2 id="crearTabla">Crear una tabla</h2>
+        <p>Crea una tabla para las pruebas de usabilidad</p>
+        <form action="#crearTabla" method="post">
+		    <input type="submit" name="crearTabla" value="Crear tabla">            
+	    </form>
+                <!-- Insertar datos en una tabla -->
+        <h2 id="insertarDatos">Insertar datos en una tabla</h2>
+        <p>Los datos "Sexo" y "Tarea realizada correctamente" tienen valores por defecto</p>
+        <form action="#insertarDatos" method="post">
+            <fieldset>
+                <legend>Datos personales usuario</legend>
+                <label for="dni">DNI</label>
+                    <input id="dni" name="dni" required=""><br>
+                <label for="name">Name</label>
+                    <input id="name" name="name" required=""><br>
+                <label for="surname">Apellidos</label>
+                    <input id="surname" name="surname" required=""><br>
+                <label for="email">Correo electrónico</label>
+                    <input id="email" type="email" name="email" required=""><br>
+                <label for="tlf">Teléfono</label>
+                    <input id="tlf" type="tel" name="tlf" pattern="[0-9]{9}" required=""><br>
+                <label for="age">Edad</label>
+                    <input id="age" name="age" type="number" required=""><br>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input id="masculino" type="radio" name="sexo" value="M">
+                        <label for="masculino">Masculino</label><br>
+                    <input id="femenino" type="radio" name="sexo" value="F">
+                        <label for="femenino">Femenino</label><br>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Datos prueba usabilidad</legend>
+                <label for="pericia">Pericia informática</label>
+                    <select id="pericia" name="pericia">
+                        <option value="10">10</option>
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5" selected="">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                        <option value="0">0</option>
+                    </select>
+                <label for="time">Tiempo (segundos)</label>
+                    <input id="time" name="time" type="number" required=""><br>
+            
+                <fieldset>
+                    <legend>Tarea realizada correctamente</legend>
+                    <input id="yes" type="radio" name="done" value="yes">
+                        <label for="yes">Si</label><br>
+                    <input id="no" type="radio" name="done" value="no">
+                        <label for="no">No</label><br>
+                </fieldset>
+                <label for="comment">Problemas encontrados </label>
+                    <textarea id="comment" name="comment"></textarea><br>
+                <label for="upgrades">Propuestas de mejora</label>
+                    <textarea id="upgrades" name="upgrades"></textarea><br>
+                <label for="userV">Valoracion usuario</label>
+                    <select id="userV" name="userV">
+                        <option value="10">10</option>
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5" selected="">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                        <option value="0">0</option>
+                    </select>
+            </fieldset>
+            <button type="submit" name="insertarDatos">Insertar</button>
+        </form>
+                <!-- Buscar datos en una tabla -->
+        <h2 id="buscarDatos"> Buscar datos en una tabla </h2>
+        <p>Busca datos en base a DNI</p>
+        <form action="#buscarDatos" method="post">
+            <label for="dniBuscar">DNI</label>
+                    <input id="dniBuscar" name="dni" required=""><br>
+		    <input type="submit" name="buscarDatos" value="buscar">
+        </form>
+                <!-- Modificar datos en una tabla -->
+        <h2 id="modificarDatos">Modificar datos</h2>
+        <p>Modifica datos, se cambiaran los datos correspondientes al del dni introducido</p>
+        <p>Los campos que se queden vacios no se modificaran</p>
+        <form action="#modificarDatos" method="post">
+            <fieldset>
+                <legend>Datos personales usuario</legend>
+                <label for="dnim">DNI del </label>
+                    <input id="dnim" name="dni" required=""><br>
+                <label for="namem">Name</label>
+                    <input id="namem" name="name"><br>
+                <label for="surnamem">Apellidos</label>
+                    <input id="surnamem" name="surname"><br>
+                <label for="emailm">Correo electrónico</label>
+                    <input id="emailm" type="email" name="email"><br>
+                <label for="tlfm">Teléfono</label>
+                    <input id="tlfm" type="tel" name="tlf" pattern="[0-9]{9}"><br>
+                <label for="agem">Edad</label>
+                    <input id="agem" name="age" type="number"><br>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input id="masculinom" type="radio" name="sexo" value="M">
+                        <label for="masculinom">Masculino</label><br>
+                    <input id="femeninom" type="radio" name="sexo" value="F">
+                        <label for="femeninom">Femenino</label><br>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Datos prueba usabilidad</legend>
+                <label for="periciam">Pericia informática</label>
+                    <select id="periciam" name="pericia">
+                        <option value="10">10</option>
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                        <option value="0">0</option>
+                    </select>
+                <label for="timem">Tiempo (segundos)</label>
+                    <input id="timem" name="time" type="number"><br>
+            
+                <fieldset>
+                    <legend>Tarea realizada correctamente</legend>
+                    <input id="yesm" type="radio" name="done" value="yes">
+                        <label for="yesm">Si</label><br>
+                    <input id="nom" type="radio" name="done" value="no">
+                        <label for="nom">No</label><br>
+                </fieldset>
+                <label for="commentm">Problemas encontrados </label>
+                    <textarea id="commentm" name="comment"></textarea><br>
+                <label for="upgradesm">Propuestas de mejora</label>
+                    <textarea id="upgradesm" name="upgrades"></textarea><br>
+                <label for="userVm">Valoracion usuario</label>
+                    <select id="userVm" name="userV">
+                        <option value="10">10</option>
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                        <option value="0">0</option>
+                    </select>
+            </fieldset>
+            <button type="submit" name="modificarDatos">Modificar</button>
+        </form>
+                <!-- Eliminar datos de una tabla -->
+        <h2 id="eliminarDatos">Eliminar datos de una tabla</h2>
+        <p>Eliminar datos en base al DNI</p>
+        <form action="#eliminarDatos" method="post">
+            <label for="dniEliminar">DNI</label>
+                    <input id="dniEliminar" name="dni" required=""><br>
+		    <input type="submit" name="eliminarDatos" value="buscar">
+        </form>
+                <!-- Generar informe< -->
+        <h2 id="generarInforme">Generar informe</h2>
+        <p>Estadisticas sobre los resultados de las pruebas</p>
+        <form action="#generarInforme" method="post">
+		    <input type="submit" name="generarInforme" value="Mostrar">
+        </form>
+                <!-- Cargar datos desde csv -->
+        <h2 id="cargarCSV">Cargar datos desde csv</h2>
+        <p>Permite poblar la base de datos desde un csv cargado desde archivos locales</p>
+        <form action="#cargarCSV" method="post" enctype="multipart/form-data">
+		<label for="csvfile">Selecciona un CSV con datos válidos</label>
+		    <input id="csvfile" type="file" name="CSV"><br>
+		<input type="submit" name="cargarCSV" value="Cargar">        
+	    </form>
+                <!-- Exportar datos a csv -->
+        <h2 id="exportarCSV">Exportar datos a csv</h2>
+        <p>Permite exportar los datos de la BBDD a un archivo csv</p>      
+        <form action="#exportarCSV" method="post">
+		    <input type="submit" name="exportarCSV" value="Exportar">
+        </form>
+          
+    </main>
+
+
+</body></html>
