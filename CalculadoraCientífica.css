@@ -1,0 +1,57 @@
+/*
+* El cuerpo de la calculadora
+*/
+/* Especificidad =  001 */
+body {
+    
+    align-self: center;
+    background-color: white;
+  }
+  
+/* Especificidad =  001 */
+form {        
+    display: grid;  
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;    
+
+    /* Que no se haga muy grande */
+    max-width: 600px;  
+    min-width: 360px;
+
+    /*Esto es para que parezca una calculadora */
+    padding: 20px;
+    background-color: #909497;
+    border-radius: 25px;
+  }
+  
+  /* Especificidad =  011 */
+input[type=button],input[type=submit] {
+    background-color: #666;
+    color: #fff;
+    font-size: 150%;
+  }
+/* Especificidad =  011 */
+input[value="MR"],input[value="MC"],input[value="MS"],input[value="M+"],input[value="M-"] {
+    background-color: #444;    
+  }
+/* Especificidad =  011 */
+input[value="/"],input[value="+"],input[value="-"],input[value="*"]
+  {
+    background-color: #a32638;
+  }
+  /* Especificidad =  002 */
+form > textarea {
+      background-color: lightgreen;      
+      color: black;
+      text-align: center;
+      font-size: 200%;
+      grid-column-start: 1;
+      grid-column-end: 6;
+  }
+  /* Especificidad =  001 */
+  h1 {
+    text-align: center;
+    color: #7e122f;
+    text-transform: uppercase;  
+}
